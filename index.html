@@ -41,6 +41,11 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open js-open-menu" type="button">
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <address class="list-contact">
           <ul class="list list-address">
             <li>
@@ -56,19 +61,84 @@
           </ul>
         </address>
       </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container container">
+        <button class="mobile-menu-close js-close-menu" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-list-item"><a href="./index.html" class="mobile-menu-list-link link">Studio</a></li>
+          <li class="mobile-menu-list-item"><a href="./portfolio.html" class="mobile-menu-list-link link">Portfolio</a></li>
+          <li class="mobile-menu-list-item"><a href="" class="mobile-menu-list-link link">Contacts</a></li>
+        </ul>
+
+        <ul class="list mobile-menu-list-contact">
+          <li>
+            <a href="tel:+110001111111" class="link mobile-menu-contact"
+              >+11 (000) 111-11-11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link mobile-menu-contact"
+              >info@devstudio.com</a>
+          </li>
+         
+        </ul>
+
+        
+        <ul class="mobile-menu-social-list list">
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link link" href="">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link link" href="">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link link" href="">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-social-item">
+            <a class="mobile-menu-social-link link" href="">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      
+        
+      </div>
+      </div>
     </header>
 
     <main>
       <!-- Hero -->
 
-      <section class="hero">
+       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button type="button" class="modal-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> 
 
       <!-- About us -->
 
@@ -132,7 +202,7 @@
       </section>
 
       <!-- What are we doing -->
-      <section class="works-section section section-nonemargine">
+       <section class="works-section section section-nonemargine">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="works-section-list list">
@@ -171,7 +241,8 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-section-list list">
             <li class="team-section-list-item">
-              <img
+              <img 
+              srcset="./images/mark2x.jpg 2x"
                 src="./images/markoguerrero.jpg"
                 alt="men"
                 width="264"
@@ -217,7 +288,8 @@
             </li>
 
             <li class="team-section-list-item">
-              <img
+              <img 
+              srcset="./images/tom2x.jpg 2x"
                 src="./images/tomford.jpg"
                 alt="men"
                 width="264"
@@ -263,7 +335,8 @@
             </li>
 
             <li class="team-section-list-item">
-              <img
+              <img 
+              srcset="./images/camila2x.jpg 2x"
                 src="./images/camilagarcia.jpg"
                 alt="women"
                 width="264"
@@ -309,7 +382,8 @@
             </li>
 
             <li class="team-section-list-item">
-              <img
+              <img 
+              srcset="./images/daniel2x.jpg 2x"
                 src="./images/danielwilson.jpg"
                 alt="men"
                 width="264"
@@ -421,8 +495,7 @@
       <div class="container footer-container">
         <div class="logo-container">
           <a href="./index.html" class="link footer-logo"
-            >Web<span class="focus">Studio</span></a
-          >
+            >Web<span class="focus">Studio</span></a>
           <p class="footer-description">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -489,7 +562,7 @@
 
     <!-- Modal Window -->
 
-    <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
      
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -585,6 +658,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+     <script src="./js/modal.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
   </body>
-</html>
+</html> 
