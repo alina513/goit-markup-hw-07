@@ -142,6 +142,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 120px;
   }
   .mobile-menu-close {
     position: absolute;
